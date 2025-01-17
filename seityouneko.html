@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="utf-8">
+ <title>成長ねこ</title>
+ <link rel="stylesheet" href="css/seityouneko.css">
+ <script src="seityouneko.js"></script>
+ </head>
+
+ <body>
+    <div class ="container">
+
+        <div class="top-area">
+          <h3>毎日学校にくると</h3>
+          <h3>ねこが成長していきます</h3>
+        </div>
+
+        <h3>体力</h3>
+        <h3>好感</h3>
+        <h3>賢さ</h3>
+           </div>
+     
+        <img src ="./image/neko.jpg" alt="成長ねこ" title="成長ねこ" id="img" width="200" height="200">
+    </div>
+
+<div id="output"></div>
+
+ </body>
+
+ <title>位置情報取得アプリ</title>
+ 
+ <style>
+   body {
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     font-family: Arial, sans-serif;
+     color: black;
+     text-align: center;
+     position: relative;
+     overflow: hidden;
+     background-color: #f0f0f0; /* 背景色を設定 */
+   }
+
+   .container {
+     padding: 20px;
+     border-radius: 10px;
+     background: rgba(255, 255, 255, 0.8); /* 半透明の背景 */
+     text-align: center;
+     width: 90%; /* レスポンシブ対応で幅調整 */
+     max-width: 400px; /* 最大幅を設定 */
+   }
+
+   button {
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     background-color: #007BFF;
+     color: white;
+   }
+
+   button:hover {
+     background-color: #0056b3;
+   }
+
+   .output {
+     margin-top: 20px;
+     padding: 10px;
+     border: 2px solid #000; /* 枠線を追加 */
+     border-radius: 5px;
+     font-size: 14px;
+     background-color: #fff; /* 白背景 */
+   }
+
+   .error {
+     color: red;
+     margin: 10px 0;
+   }
+ </style>
+</head>
+<body>
+ <div class="container">
+   <h1>位置情報を取得</h1>
+   <p id="message">以下のボタンを押して位置情報を取得してください。</p>
+   <button id="getLocation">位置情報を取得する</button>
+   <div id="output" class="output"></div>
+ </div>
+
+ </html>
